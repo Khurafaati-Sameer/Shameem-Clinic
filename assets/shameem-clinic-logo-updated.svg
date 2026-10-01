@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768" role="img" aria-labelledby="title desc">
+<title id="title">Shameem Clinic - Health Is Wealth</title>
+<desc id="desc">Red medical sphere with white cross, blue and red swooshes, Health Is Wealth text and Shameem Clinic.</desc>
+<defs>
+ <radialGradient id="orb" cx="35%" cy="25%" r="75%"><stop offset="0" stop-color="#ff7272"/><stop offset=".45" stop-color="#ed1118"/><stop offset="1" stop-color="#9b0008"/></radialGradient>
+ <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#58d9ff"/><stop offset=".45" stop-color="#008cf0"/><stop offset="1" stop-color="#0050a9"/></linearGradient>
+ <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff5757"/><stop offset=".45" stop-color="#ed1018"/><stop offset="1" stop-color="#a00008"/></linearGradient>
+ <linearGradient id="green" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#62ff79"/><stop offset=".5" stop-color="#00a42b"/><stop offset="1" stop-color="#005e18"/></linearGradient>
+ <linearGradient id="clinic" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ff5a5a"/><stop offset=".55" stop-color="#e51018"/><stop offset="1" stop-color="#990006"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000" flood-opacity=".8"/></filter>
+ <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="768" height="768" fill="#000"/>
+<g filter="url(#shadow)">
+ <circle cx="292" cy="225" r="185" fill="url(#orb)" stroke="#ff4c4c" stroke-width="8"/>
+ <path d="M205 150h70v-70h70v70h70v70h-70v70h-70v-70h-70z" fill="#fff" stroke="#b8c8d5" stroke-width="7" stroke-linejoin="round"/>
+ <path d="M104 470 C180 305 350 255 610 300 C667 310 706 336 724 365 C675 342 610 340 536 347 C365 364 230 431 132 533 C110 526 94 505 104 470Z" fill="url(#blue)" stroke="#0d4e9d" stroke-width="5"/>
+ <path d="M151 498 C246 393 385 337 579 350 C616 353 642 359 664 368 C536 361 394 397 274 469 C225 499 181 531 151 555 C137 542 138 515 151 498Z" fill="url(#red)" stroke="#a00008" stroke-width="4"/>
+</g>
+<text x="392" y="430" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="61" font-style="italic" font-weight="700" fill="url(#green)" stroke="#d8e8d8" stroke-width="2" paint-order="stroke">Health Is Wealth</text>
+<text x="384" y="665" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="900" letter-spacing="1" fill="url(#clinic)" stroke="#e7e7e7" stroke-width="3" paint-order="stroke" filter="url(#shadow)">SHAMEEM CLINIC</text>
+</svg>
