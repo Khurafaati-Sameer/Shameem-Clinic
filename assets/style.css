@@ -86,3 +86,47 @@ footer{background:var(--ink);padding:25px 0}
 .doctor-photo-caption small{display:block;margin-top:7px;color:#c7bbac}
 @media(max-width:900px){.portrait-placeholder .doctor-photo,.doctor-photo{height:430px!important;min-height:430px!important}}
 @media(max-width:560px){.portrait-placeholder .doctor-photo,.doctor-photo{height:360px!important;min-height:360px!important}.portrait-placeholder .doctor-photo-caption{padding:75px 24px 26px;margin-top:-105px}.portrait-placeholder .doctor-photo-caption strong{font-size:27px}}
+
+/* v7 hero identity and photo clarity */
+.hero-visual{display:grid;grid-template-columns:1fr;gap:22px;align-items:start}
+.hero-logo-wrap{display:flex;justify-content:center;align-items:center;padding:0}
+.hero-logo-plate{
+  width:min(320px,62vw);
+  min-height:235px;
+  background:#111;
+  border:1px solid #2f2d2a;
+  padding:18px;
+  border-radius:20px;
+  display:grid;
+  place-items:center;
+  box-shadow:14px 16px 0 rgba(101,31,41,.9),0 16px 40px rgba(0,0,0,.14);
+}
+.sc-hero-logo{
+  width:100%!important;
+  height:auto!important;
+  max-width:100%!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  border-radius:8px;
+  background:transparent;
+  box-shadow:none!important;
+}
+.portrait-placeholder .doctor-photo{
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  max-height:470px!important;
+  aspect-ratio:4/5;
+  object-fit:cover!important;
+  object-position:center 12%!important;
+  image-rendering:auto;
+  filter:none!important;
+}
+@media(max-width:900px){
+  .hero-logo-plate{width:min(300px,78vw);min-height:220px}
+  .portrait-placeholder .doctor-photo{max-height:none!important}
+}
+@media(max-width:560px){
+  .hero-logo-plate{width:min(270px,88vw);min-height:195px;padding:14px;border-radius:16px}
+  .portrait-placeholder .doctor-photo{aspect-ratio:4/5}
+}
